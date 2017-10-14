@@ -1,8 +1,0 @@
-c:\Projects\codingschool2017\bin\Debug\netstandard2.0\codingschool2017.deps.json
-c:\Projects\codingschool2017\bin\Debug\netstandard2.0\codingschool2017.dll
-c:\Projects\codingschool2017\bin\Debug\netstandard2.0\codingschool2017.pdb
-c:\Projects\codingschool2017\obj\Debug\netstandard2.0\codingschool2017.csproj.CoreCompileInputs.cache
-c:\Projects\codingschool2017\obj\Debug\netstandard2.0\codingschool2017.AssemblyInfoInputs.cache
-c:\Projects\codingschool2017\obj\Debug\netstandard2.0\codingschool2017.AssemblyInfo.cs
-c:\Projects\codingschool2017\obj\Debug\netstandard2.0\codingschool2017.dll
-c:\Projects\codingschool2017\obj\Debug\netstandard2.0\codingschool2017.pdb
