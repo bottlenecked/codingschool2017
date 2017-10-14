@@ -2,7 +2,7 @@
 
 namespace CodingSchool2017
 {
-    public class DiceRoller1
+    public class DiceRollerRefactored
     {
         public void RollDice()
         {
