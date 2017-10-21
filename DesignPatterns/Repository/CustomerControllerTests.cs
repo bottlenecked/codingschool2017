@@ -9,7 +9,7 @@ public class CustomerControllerTests {
   public void Get_ReturnsAllCustomers() {
     // Arrange
     var customerList = new [] {
-      new Customer("Jonh") {Age = 30},
+      new Customer("John") {Age = 30},
       new Customer("Liz") {Age = 25}
     };
 
