@@ -1,9 +1,16 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
-public class CustomerHelper {
+public interface ICustomerRepository {
+  
+  IEnumerable<Customer> GetCustomers();
 
-  public static IEnumerable<Customer> GetCustomers() {
+  void UpdateCustomer(Customer customer);
+
+}
+
+public class CustomerSqlRepository : ICustomerRepository {
+  public IEnumerable<Customer> GetCustomers() {
     using (var conn = new SqlConnection("some database")) {
       conn.Open();
       using(var cmd = new SqlCommand("SELECT TOP * FROM CUSTOMERS")) {
@@ -16,7 +23,7 @@ public class CustomerHelper {
     }    
   }
 
-  public static void UpdateCustomer(Customer customer) {
+  public void UpdateCustomer(Customer customer) {
     using (var conn = new SqlConnection("some database")) {
       conn.Open();
       using(var cmd = new SqlCommand("UPDATE CUSTOMERS SET AGE=@age WHERE NAME=@name")) {
@@ -26,12 +33,4 @@ public class CustomerHelper {
       }
     }    
   }
-
-}
-
-public class Customer {
-  public Customer(string name) => Name = name;
-
-  public string Name { get; private set; }
-  public int Age {get; set;}
 }
