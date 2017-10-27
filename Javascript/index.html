@@ -12,26 +12,26 @@
 </head>
 
 <body>
-  <div class="container">
+  <div id="view" class="container">
     <h1 class="text-center">Magic Search Engine
       <sup>TM</sup>
     </h1>
-    <form class="pt-5">
-      <div class="form-group">
-        <label for="searchBox">Search</label>
-        <div class="row">
-          <div class="col-md-11">
-            <input type="text" class="form-control col-md-8" id="searchBox" aria-describedby="searchHelp" placeholder="Enter search query">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <form class="pt-5 form-inline text-center">
+          <div class="form-group pr-1" style="width: 80%">
+            <input type="text" class="form-control" id="searchBox" aria-describedby="searchHelp" placeholder="Enter search query" style="width: 100%">
           </div>
-          <div class="col-md-1">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
       </div>
-    </form>
+      <div class="col-md-2"></div>
+    </div>
   </div>
 </body>
 
-<script src="/scripts/main.js" async="true" type="module"></script>
+<!-- https://jakearchibald.com/2017/es-modules-in-browsers/ -->
+<script src="/scripts/main.js" type="module" async></script>
 
 </html>
