@@ -1,3 +1,5 @@
-import foo from "/scripts/events.js"
+import {default as View} from "/scripts/view.js"
 
-foo();
+let viewEle = document.getElementById("view");
+let view = new View(viewEle);
+view.initialize();
