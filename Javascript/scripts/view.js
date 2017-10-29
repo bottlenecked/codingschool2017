@@ -47,7 +47,7 @@ function showError(error, view) {
   let html = `
     <div class="alert alert-danger mt-3" role="alert">
       <h4>error ${error.error || error.message}</h4>
-      No results available. Did you try searching for monkey?
+      No results available. Did you try searching for <strong>monkey</strong>?
     </div>
   `;
   resultsSection.innerHTML = html;
