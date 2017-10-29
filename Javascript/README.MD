@@ -1,5 +1,17 @@
 # ES6 Tutorial
 
+## How to run the example
+1. Install `nodejs` from [current branch](https://nodejs.org/en/download/current/)
+2. Open a __new__ console window and install `http-serve`
+```
+npm install http-serve -g
+```
+3. Open a console, navigate to the `/Javascript` folder and type in the terminal
+```bash
+http-serve -p 8080
+```
+4. Visit [http://127.0.0.1:8080/index.html](http://127.0.0.1:8080/index.html) in your browser
+
 ## The following concepts will be covered
 
 ### Strict Mode
@@ -47,5 +59,5 @@ The Fetch API provides a JavaScript interface for accessing and manipulating par
 
 ### Chrome dev tools
 The Chrome Developer Tools (DevTools for short), are a set of web authoring and debugging tools built into Google Chrome. The DevTools provide web developers deep access into the internals of the browser and their web application. Use the DevTools to efficiently track down layout issues, set JavaScript breakpoints, and get insights for code optimization.
-* Access them with `F12`
+* Access them by pressing `F12` on your keyboard
 * https://developers.google.com/web/tools/chrome-devtools/
